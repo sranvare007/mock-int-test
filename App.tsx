@@ -6,10 +6,8 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
-
+import {SafeAreaView, StatusBar, Text, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import HomeSceen from './src/screens/home-screen';
 import {Provider} from 'react-redux';
 import store from './src/store/store';
 
@@ -27,7 +25,7 @@ function App(): JSX.Element {
           barStyle={isDarkMode ? 'light-content' : 'dark-content'}
           backgroundColor={backgroundStyle.backgroundColor}
         />
-        <HomeSceen />
+        <Text>Hello World</Text>
       </SafeAreaView>
     </Provider>
   );
